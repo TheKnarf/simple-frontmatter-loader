@@ -1,0 +1,16 @@
+{
+  "name": "simple-frontmatter-loader",
+  "version": "0.1.0",
+  "description": "A simple webpack loader for frontmatter. Turns frontmatter into exports.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository" : { "type": "git", "url": "https://github.com/TheKnarf/simple-frontmatter-loader" },
+  "author": "Frank Lyder Bredland <fl@nyggen.com>",
+  "license": "MIT",
+  "dependencies": {
+    "front-matter": "^2.3.0",
+    "loader-utils": "^1.1.0"
+  }
+}
