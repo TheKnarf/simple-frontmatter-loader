@@ -1,6 +1,6 @@
 {
   "name": "simple-frontmatter-loader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple webpack loader for frontmatter. Turns frontmatter into exports.",
   "main": "src/index.js",
   "scripts": {

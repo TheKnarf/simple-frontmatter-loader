@@ -11,35 +11,33 @@ npm install --save-dev simple-frontmatter-loader
 Example webpack config:
 
 ```
-	module: {
-		rules: [
-		{
-			test: /\.jsx?$/,
-			exclude: /node_modules/,
-			use: [
-				'babel-loader',
-				'frontmatter-loader',
-			]
-		},
-		{
-			test: /\.mdx?$/,
-			use: [
-				'babel-loader',
-				'@mdx-js/loader',
-				'frontmatter-loader',
-			]
-		},
-		{
-			test: /\.html$/,
-			use: [
-				{
-					loader: 'frontmatter-loader',
-					options: {
-						use: [{ loader: 'html-loader', options: { exportAsEs6Default: 'es6' } }]
-					}
-				}
-			]
-		},
+module: {
+	rules: [
+	{
+		test: /\.jsx?$/,
+		exclude: /node_modules/,
+		use: [
+			'babel-loader',
+			'simple-frontmatter-loader',
 		]
 	},
+	{
+		test: /\.mdx?$/,
+		use: [
+			'babel-loader',
+			'@mdx-js/loader',
+			'simple-frontmatter-loader',
+		]
+	},
+	{
+		test: /\.html$/,
+		use: [{
+			loader: 'simple-frontmatter-loader',
+			options: {
+				use: [{ loader: 'html-loader', options: { exportAsEs6Default: 'es6' } }]
+			}
+		}]
+	},
+	]
+},
 ```
