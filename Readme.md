@@ -1,5 +1,7 @@
 # Simple Frontmatter Loader
 
+[![NpmVersion](https://img.shields.io/npm/v/simple-frontmatter-loader.svg)](https://www.npmjs.com/package/simple-frontmatter-loader)
+
 A simple webpack loader for frontmatter. Turns frontmatter into exports.
 
 ```
